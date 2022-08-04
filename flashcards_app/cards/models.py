@@ -5,7 +5,7 @@ BOXES = range(1, NUM_BOXES+1)
 
 class Card(models.Model):
     question = models.CharField(max_length=100)
-    answer = models.CharField(max_length=100)
+    answer = models.CharField(max_length=450)
     box = models.IntegerField(
         choices=zip(BOXES, BOXES),
         default=BOXES[0],
